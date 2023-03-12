@@ -1,0 +1,13 @@
+{
+  "gruvbox.nvim": { "branch": "main", "commit": "331507561a46d6ce484f576299e0297e277bac7f" },
+  "lazy.nvim": { "branch": "main", "commit": "5b4444f0d7e556deba3f7ca949a2ba0e2c3369fb" },
+  "nvim-lspconfig": { "branch": "master", "commit": "4bb0f1845c5cc6465aecedc773fc2d619fcd8faf" },
+  "nvim-tree.lua": { "branch": "master", "commit": "bbb6d4891009de7dab05ad8fc2d39f272d7a751c" },
+  "nvim-treesitter": { "branch": "master", "commit": "079a50f66ea9f2d3b9827bdba82ba3b255155621" },
+  "plenary.nvim": { "branch": "master", "commit": "253d34830709d690f013daf2853a9d21ad7accab" },
+  "telescope.nvim": { "branch": "master", "commit": "a3f17d3baf70df58b9d3544ea30abe52a7a832c2" },
+  "toggleterm.nvim": { "branch": "main", "commit": "fd63194901fa80c65f6ff2951b8a975b0c13d9b1" },
+  "vim-airline": { "branch": "master", "commit": "038e3a6ca59f11b3bb6a94087c1792322d1a1d5c" },
+  "vim-airline-themes": { "branch": "master", "commit": "dd81554c2231e438f6d0e8056ea38fd0e80ac02a" },
+  "which-key.nvim": { "branch": "main", "commit": "fb027738340502b556c3f43051f113bcaa7e8e63" }
+}
