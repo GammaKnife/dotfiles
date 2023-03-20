@@ -1,0 +1,64 @@
+###############################################################
+# ███████╗░██████╗██╗░░██╗░█████╗░██╗░░░░░██╗░█████╗░░██████╗ #
+# ╚════██║██╔════╝██║░░██║██╔══██╗██║░░░░░██║██╔══██╗██╔════╝ #
+# ░░███╔═╝╚█████╗░███████║███████║██║░░░░░██║███████║╚█████╗░ #
+# ██╔══╝░░░╚═══██╗██╔══██║██╔══██║██║░░░░░██║██╔══██║░╚═══██╗ #
+# ███████╗██████╔╝██║░░██║██║░░██║███████╗██║██║░░██║██████╔╝ #
+# ╚══════╝╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚══════╝╚═╝╚═╝░░╚═╝╚═════╝░ #
+###############################################################
+
+
+# █▀▄ █ █▀█ █▀▀ █▀▀ ▀█▀ █▀█ █▀█ █ █▀▀ █▀
+# █▄▀ █ █▀▄ ██▄ █▄▄ ░█░ █▄█ █▀▄ █ ██▄ ▄█
+
+# filesystem
+hash -d art="/mnt/raid1/filesystem/Art"
+hash -d backups="/mnt/raid1/filesystem/Backups"
+hash -d dev="/mnt/raid1/filesystem/Dev"
+
+# filesystem Dev
+hash -d ansible="/mnt/raid1/filesystem/Dev/ansible"
+hash -d docker="/mnt/raid1/filesystem/Dev/docker"
+hash -d git="/mnt/raid1/filesystem/Dev/git"
+
+
+# █▀▀ █▀█ █░░ █▀█ █▀█ █▀
+# █▄▄ █▄█ █▄▄ █▄█ █▀▄ ▄█
+
+# Change cat commands over to bat
+alias cat="bat -pp"
+
+# Change diff to color
+alias diff="diff --color=auto"
+
+# Change grep to color
+alias egrep="egrep --color=auto"
+alias fgrep="fgrep --color=auto"
+alias grep="grep --color=auto"
+
+# Change ip to color
+alias ip="ip --color=auto"
+
+# Change ls commands over to lsd
+alias ls="lsd --group-dirs first"
+alias tree="lsd --tree"
+
+# Change diff to color
+alias diff="diff --color=auto"
+
+
+# █▀ █▀█ █▀▀ █░░ █░░ █ █▄░█ █▀▀
+# ▄█ █▀▀ ██▄ █▄▄ █▄▄ █ █░▀█ █▄█
+
+# Common spelling errors
+alias suod="sudo"
+alias sl="lsd --group-dirs first"
+
+# Make a directory and all parent directories with verbosity.
+alias mkdir='mkdir -p -v'
+
+# Prevent mistakes of deleting the wrong file
+alias cp='cp -ip'
+alias mv='mv -i'
+alias rm='rm -i'
+

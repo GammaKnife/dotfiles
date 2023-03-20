@@ -15,40 +15,8 @@ PS1="%B%F{red}──(%f%F{yellow}%n%f%F{green}@%f%F{yellow}%m%f%F{red})──(%F
 # ▄▀█ █░░ █ ▄▀█ █▀
 # █▀█ █▄▄ █ █▀█ ▄█
 
-# Colors
-# Change cat commands over to bat
-alias cat="bat -pp"
-
-# Change diff to color
-alias diff="diff --color=auto"
-
-# Change grep to color
-alias egrep="egrep --color=auto"
-alias fgrep="fgrep --color=auto"
-alias grep="grep --color=auto"
-
-# Change ip to color
-alias ip="ip --color=auto"
-
-# Change ls commands over to lsd
-alias ls="lsd --group-dirs first"
-alias tree="lsd --tree"
-
-# Change diff to color
-alias diff="diff --color=auto"
-
-# Other settings
-# Common spelling errors
-alias suod="sudo"
-alias sl="lsd --group-dirs first"
-
-# Make a directory and all parent directories with verbosity.
-alias mkdir='mkdir -p -v'
-
-# Prevent mistakes of deleting the wrong file
-alias cp='cp -ip'
-alias mv='mv -i'
-alias rm='rm -i'
+# Find all alias here
+. ~/.zshalias
 
 
 # █▀▀ █▀█ █░░ █▀█ █▀█
@@ -66,9 +34,14 @@ LESS_TERMCAP_us=$'\e[1;33m'
 
 # █▀▀ █▀█ █▀▄▀█ █▀█ █ █▄░█ █▀ ▀█▀ ▄▀█ █░░ █░░
 # █▄▄ █▄█ █░▀░█ █▀▀ █ █░▀█ ▄█ ░█░ █▀█ █▄▄ █▄▄
+
 zstyle :compinstall filename '/home/user/.zshrc'
 autoload -Uz compinit
 compinit
+
+
+# █▀▀ █░█ █▄░█ █▀▀ ▀█▀ █ █▀█ █▄░█ █▀
+# █▀░ █▄█ █░▀█ █▄▄ ░█░ █ █▄█ █░▀█ ▄█
 
 
 # █░█ █ █▀ ▀█▀ █▀█ █▀█ █▄█
@@ -96,6 +69,9 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # Enable Vi mode
 bindkey -v
 
+# Enable reverse history Emacs style
+bindkey "^R" history-incremental-search-backward
+
 # Remove mode switching delay 
 KEYTIMEOUT=5
 
@@ -119,6 +95,13 @@ function zle-line-init() {
     echo -ne "\e[6 q"
 }
 
+# Start shell with fzf
+#function zle-fzf-init() {
+#  source /usr/share/fzf/key-bindings.zsh
+#  source /usr/share/fzf/completion.zsh 
+#}
+
 # Load Line editor 
 zle -N zle-line-init
 zle -N zle-keymap-select
+
