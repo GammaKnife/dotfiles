@@ -9,7 +9,12 @@ return {
     -- Custom Config
      config = function()
       require("gruvbox").setup({
-          italic = false,
+          italic = {
+            strings = false,
+            operators = false,
+            comments = false,
+
+          },
           contrast = "", -- can be "hard", "soft" or empty string
       })
       vim.cmd([[colorscheme gruvbox]])

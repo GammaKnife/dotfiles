@@ -9,7 +9,7 @@
 
 # █▀█ █▀█ █▀█ █▀▄▀█ █▀█ ▀█▀
 # █▀▀ █▀▄ █▄█ █░▀░█ █▀▀ ░█░
-PS1="%B%F{red}──(%f%F{yellow}%n%f%F{green}@%f%F{yellow}%m%f%F{red})──(%F{green}%~%f%F{red}) $%f "
+PS1="%F{green}──(%f%B%F{magenta}%n%f%b%F{green}@%f%B%F{magenta}%m%f%b%F{green})──(%B%F{yellow}%~%f%b%F{green}) $%f "
 
 
 # ▄▀█ █░░ █ ▄▀█ █▀
@@ -42,6 +42,15 @@ compinit
 
 # █▀▀ █░█ █▄░█ █▀▀ ▀█▀ █ █▀█ █▄░█ █▀
 # █▀░ █▄█ █░▀█ █▄▄ ░█░ █ █▄█ █░▀█ ▄█
+
+# Function to move up directories
+function up {
+
+  for ((i=1; i <= $1; i+=1))
+  do
+    cd ../
+  done
+}
 
 
 # █░█ █ █▀ ▀█▀ █▀█ █▀█ █▄█

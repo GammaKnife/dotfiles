@@ -17,8 +17,8 @@ hash -d backups="/mnt/raid1/filesystem/Backups"
 hash -d dev="/mnt/raid1/filesystem/Dev"
 
 # filesystem Dev
-hash -d ansible="/mnt/raid1/filesystem/Dev/ansible"
-hash -d docker="/mnt/raid1/filesystem/Dev/docker"
+hash -d ansible="/mnt/raid1/filesystem/Dev/git/rete-luporum/ansible"
+hash -d docker="/mnt/raid1/filesystem/Dev/git/rete-luporum/docker"
 hash -d git="/mnt/raid1/filesystem/Dev/git"
 
 
@@ -39,9 +39,8 @@ alias grep="grep --color=auto"
 # Change ip to color
 alias ip="ip --color=auto"
 
-# Change ls commands over to lsd
-alias ls="lsd --group-dirs first"
-alias tree="lsd --tree"
+# Change ls commands over to exa
+alias ls="exa"
 
 # Change diff to color
 alias diff="diff --color=auto"

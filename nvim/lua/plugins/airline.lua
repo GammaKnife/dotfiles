@@ -10,7 +10,7 @@
 
     -- Custom Config
     init = function()
-      vim.g.airline_theme="base16_gruvbox_dark_medium"
+      vim.g.airline_theme="term"
     end,
 
   },

@@ -24,9 +24,8 @@ PS1="\n \[\033[1;31m\]┌─────(\[\033[1;33m\]\u\[\033[1;32m\]@\[\033[1
 # Change cat commands over to bat
 alias cat="bat -pp"
 
-# Change ls commands over to lsd
-alias ls="lsd --group-dirs first"
-alias tree="lsd --tree"
+# Change ls commands over to exa
+alias ls="exa"
 
 # Change top over to bashtop
 alias top="btop"
